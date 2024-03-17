@@ -1,0 +1,5 @@
+
+
+Use WinPython 3.11
+lxml - compile issue, just use the latest one to get wheel directly, instead of building it - modified "requirements.txt"
+flet - get issue, just use the latest one, modified "requirements.txt"
