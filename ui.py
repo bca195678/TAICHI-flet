@@ -22,7 +22,7 @@ class NavigationBar(Stack):
             if not content:
                 continue
             icon = navigation[0]
-            text = navigation[1]
+            text = navigation[2]
             self.tabs_list.append(Tab(content=content, icon=icon, text=text))
         self.tabs.tabs.extend(self.tabs_list)
         self.tabs.on_change = lambda e: self.tab_init_event(e.data)
