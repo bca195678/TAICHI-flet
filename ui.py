@@ -42,7 +42,7 @@ class NavigationBar(Stack):
 
 
 def main(page: Page):
-    page.title = "太·极"
+    page.title = "太·極"
     progress_bar = ProgressBar(visible=False)
     page.splash = progress_bar
     t = NavigationBar(page)
