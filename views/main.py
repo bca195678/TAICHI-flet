@@ -68,7 +68,7 @@ class ViewPage(Stack):
             self.clouds.append(_cloud)
         self.theme_switch = ThemeSwitch(self.page)
         self.gzh_img = Container(content=GONGZHONGHAO, right=5, bottom=5)
-        self.warn_text = Text("数据均来源于网络，与本人无关！请自行判断数据的准确性！", right=20, bottom=1)
+        self.warn_text = Text("太極啟宇宙神秘門，五行羅盤導蒼穹。陰陽交織，萬象秘道隨風轉。", right=20, bottom=1)
         super(ViewPage, self).__init__(
             controls=[self.bg, self.theme_switch, self.gzh_img, self.warn_text]
             + self.clouds,
