@@ -50,3 +50,4 @@ def main(page: Page):
 
 
 flet.app(target=main, assets_dir="assets")
+#flet.app(target=main, assets_dir='assets', view=flet.WEB_BROWSER) 

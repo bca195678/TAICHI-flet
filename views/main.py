@@ -5,7 +5,7 @@ from random import randint
 from flet import Container, alignment, animation, transform, Stack, Text
 from flet import Switch, Page
 
-from statics import BIG_TAICHI, CLOUD, GONGZHONGHAO
+from statics import BIG_TAICHI, CLOUD, GONGZHONGHAO, BIG_LOUPAN
 from utils import one_shot_thread
 
 LIGHT = ("light", "光明")
@@ -39,7 +39,8 @@ class ViewPage(Stack):
     def __init__(self, page):
         self.page = page
         self.bg = Container(
-            content=BIG_TAICHI,
+            # content=BIG_TAICHI,
+            content=BIG_LOUPAN,
             alignment=alignment.center,
             rotate=transform.Rotate(0, alignment=alignment.center),
             animate_rotation=animation.Animation(duration=2000, curve="linear"),
