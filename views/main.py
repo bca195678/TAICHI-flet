@@ -48,11 +48,13 @@ class ViewPage(Stack):
             expand=True,
         )
         self.clouds = []
-        for i in range(randint(10, 20)):
+        #for i in range(randint(10, 20)):
+        for i in range(randint(3, 6)):
             left = randint(1, int(self.page.width))
             top = randint(1, int(self.page.height))
             width = randint(20, 80)
-            height = int(width / 1.125)
+            #height = int(width / 1.125)
+            height = width
             CLOUD.width = width
             CLOUD.height = height
             _cloud = Container(
