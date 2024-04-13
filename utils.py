@@ -18,16 +18,16 @@ CACHE = CURR_PATH.joinpath("Cache")
 CACHE.mkdir(parents=True, exist_ok=True)
 
 
-class CORSImage(_Image):
-    cors_url = "https://pc-cors.elitb.com/proxy?url="
-
-    def __init__(self, *args, **kwargs):
-        if "src" in kwargs:
-            kwargs["src"] = self.cors_url + kwargs["src"]
-        else:
-            if args:
-                args = (self.cors_url + args[0],) + args[1:]
-        super(CORSImage, self).__init__(*args, **kwargs)
+#class CORSImage(_Image):
+#    cors_url = "https://pc-cors.elitb.com/proxy?url="
+#
+#    def __init__(self, *args, **kwargs):
+#        if "src" in kwargs:
+#            kwargs["src"] = self.cors_url + kwargs["src"]
+#        else:
+#            if args:
+#                args = (self.cors_url + args[0],) + args[1:]
+#        super(CORSImage, self).__init__(*args, **kwargs)
 
 
 def snack_bar(page, message):
