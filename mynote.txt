@@ -2,4 +2,5 @@
 
 Use WinPython 3.11
 lxml - compile issue, just use the latest one to get wheel directly, instead of building it - modified "requirements.txt"
+lxml - also need to install separate lxml_html_clean
 flet - get issue, just use the latest one, modified "requirements.txt"
